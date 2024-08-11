@@ -1,6 +1,6 @@
-const ttt=document.querySelector(".container");
-const winnerText=document.querySelector("#MainTitle");
-const btns=document.querySelectorAll(".box");
+let ttt=document.querySelector(".container");
+let winnerText=document.querySelector("#MainTitle");
+let btns=document.querySelectorAll(".box");
 
 let turnX=true;
 let followMap=[[0,1,2],
@@ -17,12 +17,6 @@ btns.forEach((box)=>{
 
 	box.addEventListener("click",()=>{
 		turnX=!turnX;
-
-		if(box.classList.contains("disable"))
-		{
-			return;
-		}
-
 		if(turnX)
 		{
 			box.innerText="O";
@@ -31,7 +25,14 @@ btns.forEach((box)=>{
 		{
 			box.innerText="X";
 		}
-		Check();
-		box.classList.add("disable");
+		box.classList.add("disCursor");
+		CheckP();
 	});
 });
+
+function CheckP(){
+	for(let myPattern of followMap)
+	{
+		
+	}
+}
