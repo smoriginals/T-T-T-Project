@@ -19,6 +19,12 @@ main{
 	cursor:not-allowed;
 	pointer-events:none;
 }
+.lock{
+	background-color:#ccc;
+	color:#666;
+	cursor:not-allowed;
+	pointer-events:none;
+}
 .container{
 	background-color:#56445D;
 	height:70%;
@@ -30,6 +36,7 @@ main{
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
+	color:white;
 }
 
 .Title{
@@ -80,6 +87,7 @@ main{
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
+	color:white;
 }
 .newGame{
 	width:80%;
